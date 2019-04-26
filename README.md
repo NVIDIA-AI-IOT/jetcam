@@ -4,7 +4,7 @@ JetCam is an easy to use camera interface for NVIDIA Jetson.
 
 ## Setup
 
-1. Follow the [JetKit](#) installation guide
+1. Flash your Jetson Nano using the [JetCard](https://github.com/NVIDIA-AI-IOT-private/jetcard) SD card image
 
 2. Install the JetCam python package
 
