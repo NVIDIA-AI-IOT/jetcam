@@ -24,3 +24,4 @@ JetCam is an easy to use camera interface for NVIDIA Jetson.
 | Arducam IMX219 M12 lens mount | [IMX219](jetcam/imx219.py#L9) | [RobotShop](https://www.robotshop.com/en/arducam-8mp-sony-imx219-camera-module-m12-lens-ls40136-raspberry-pi.html) | [Notebook](notebooks/imx219/imx219.ipynb) |
 | LI-IMX219-MIPI-AF-NANO | [IMX219](jetcam/imx219.py#L9) | [Leopard Imaging](https://leopardimaging.com/product/li-imx219-mipi-af-nano/) | [Notebook](notebooks/imx219/imx219.ipynb) |
 | LI-IMX219-MIPI-FF-NANO | [IMX219](jetcam/imx219.py#L9) | [Leopard Imaging](https://leopardimaging.com/product/li-imx219-mipi-ff-nano/) | [Notebook](notebooks/imx219/imx219.ipynb) |
+| LI-IMX219-MIPI-FF-NANO | [IMX219](jetcam/webcam_usb.py#L9) | [Logitech C270](https://www.amazon.com/Logitech-Widescreen-designed-Calling-Recording/dp/B004FHO5Y6) | [Notebook](notebooks/webcam_usb/webcam_usb.ipynb) |
