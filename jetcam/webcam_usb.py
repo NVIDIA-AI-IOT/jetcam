@@ -11,16 +11,17 @@ class webcam_usb(Camera):
     capture_fps = traitlets.Integer(default_value=30)
     capture_width = traitlets.Integer(default_value=640)
     capture_height = traitlets.Integer(default_value=480)   
-    capture_device = traitlets.Integer(default_value=1)
+    capture_device = traitlets.Integer(default_value=0)
     def __init__(self, *args, **kwargs):
-        super(IMX219, self).__init__(*args, **kwargs)
+        super(webcam_usb, self).__init__(*args, **kwargs)
         try:
             self.cap = cv2.VideoCapture(self._gst_str(), cv2.CAP_GSTREAMER)
 
-            re, image = self.cap.read()
-
+            re , image = self.cap.read()
+            
             if not re:
                 raise RuntimeError('Could not read image from camera.')
+            
         except:
             raise RuntimeError(
                 'Could not initialize camera.  Please see error trace.')
@@ -28,14 +29,12 @@ class webcam_usb(Camera):
         atexit.register(self.cap.release)
                 
     def _gst_str(self):
-        return 'v4l2src device=/dev/video{} ! '
-               'video/x-raw, width=%d, height=%d, framerate=(fraction)%d/1 ! '
-               'videoconvert !  video/x-raw, width=(int)%d, height=(int)%d, format=(string)BGR ! appsink'% (
-                self.capture_device, self.capture_width, self.capture_height, self.capture_fps, self.width, self.height)
+        return 'v4l2src device=/dev/video{} ! video/x-raw, width=(int){}, height=(int){}, framerate=(fraction){}/1 ! videoconvert !  video/x-raw, , format=(string)BGR ! appsink'.format(self.capture_device, self.width, self.height, self.capture_fps)
     
     def _read(self):
         re, image = self.cap.read()
         if re:
-            return image
+            image_resized = cv2.resize(image,(int(self.capture_width),int(self.capture_height)))
+            return image_resized
         else:
             raise RuntimeError('Could not read image from camera')
