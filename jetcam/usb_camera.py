@@ -14,7 +14,7 @@ class USBCamera(Camera):
     capture_device = traitlets.Integer(default_value=0)
     
     def __init__(self, *args, **kwargs):
-        super(webcam_usb, self).__init__(*args, **kwargs)
+        super(USBCamera, self).__init__(*args, **kwargs)
         try:
             self.cap = cv2.VideoCapture(self._gst_str(), cv2.CAP_GSTREAMER)
 

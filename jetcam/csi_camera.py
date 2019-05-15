@@ -13,7 +13,7 @@ class CSICamera(Camera):
     capture_height = traitlets.Integer(default_value=480)
 
     def __init__(self, *args, **kwargs):
-        super(IMX219, self).__init__(*args, **kwargs)
+        super(CSICamera, self).__init__(*args, **kwargs)
         try:
             self.cap = cv2.VideoCapture(self._gst_str(), cv2.CAP_GSTREAMER)
 
