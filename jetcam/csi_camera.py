@@ -6,11 +6,11 @@ import threading
 import traitlets
 
 
-class IMX219(Camera):
+class CSICamera(Camera):
     
-    capture_fps = traitlets.Integer(default_value=21)
-    capture_width = traitlets.Integer(default_value=3280)
-    capture_height = traitlets.Integer(default_value=2464)
+    capture_fps = traitlets.Integer(default_value=30)
+    capture_width = traitlets.Integer(default_value=640)
+    capture_height = traitlets.Integer(default_value=480)
 
     def __init__(self, *args, **kwargs):
         super(IMX219, self).__init__(*args, **kwargs)
