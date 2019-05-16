@@ -35,4 +35,4 @@ These cameras work with the [``USBCamera``](jetcam/usb_camera.py) class.  Try th
 
 | Model | URL |
 |:-------|-------|
-| Logitech C270 WEBCAM | [Amazon](https://www.amazon.com/Logitech-Widescreen-designed-Calling-Recording/dp/B004FHO5Y6) | 
+| Logitech C270 | [Amazon](https://www.amazon.com/Logitech-Widescreen-designed-Calling-Recording/dp/B004FHO5Y6) | 
