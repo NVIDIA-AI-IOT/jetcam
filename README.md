@@ -53,7 +53,7 @@ image = camera.value
 
 #### Callback
 
-You can also set the camera to ``running = True``, which will spawn a thread that acquires images from the camera.  These will update the camera's ``value`` attribute automatically.  You can attach a callback to the value using the ``traitlets`` library.  The will call the callback with the new camera value as well as the old camera value
+You can also set the camera to ``running = True``, which will spawn a thread that acquires images from the camera.  These will update the camera's ``value`` attribute automatically.  You can attach a callback to the value using the [traitlets](https://traitlets.readthedocs.io/en/stable/api.html#callbacks-when-trait-attributes-change) library.  This will call the callback with the new camera value as well as the old camera value
 
 ```python
 camera.running = True
