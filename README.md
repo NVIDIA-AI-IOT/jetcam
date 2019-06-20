@@ -16,6 +16,7 @@ JetCam is an easy to use camera interface for NVIDIA Jetson.
 
 ### Usage
 
+Below we show some usage examples.  You can find more in the [notebooks](notebooks).
 #### Create CSI camera
 
 Call ``CSICamera`` to use a compatible CSI camera.  ``capture_width``, ``capture_height``, and ``capture_fps`` will control the capture shape and rate that images are aquired.  ``width`` and ``height`` control the final output shape of the image as returned by the ``read`` function.
