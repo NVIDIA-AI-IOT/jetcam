@@ -3,7 +3,7 @@
 JetCam is an easy to use camera interface for NVIDIA Jetson.
 
 
-### Setup
+## Setup
 
 ```bash
 git clone https://github.com/NVIDIA-AI-IOT-private/jetcam.git
@@ -13,10 +13,11 @@ sudo python3 setup.py install
 
 > JetCam is tested with a system configured by following the [JetCard](http://github.com/NVIDIA-AI-IOT/jetcard) setup.  Different system configurations may require additional steps.
 
-### Usage
+## Usage
 
 Below we show some usage examples.  You can find more in the [notebooks](notebooks).
-#### Create CSI camera
+
+### Create CSI camera
 
 Call ``CSICamera`` to use a compatible CSI camera.  ``capture_width``, ``capture_height``, and ``capture_fps`` will control the capture shape and rate that images are aquired.  ``width`` and ``height`` control the final output shape of the image as returned by the ``read`` function.
 
@@ -26,7 +27,7 @@ from jetcam.csi_camera import CSICamera
 camera = CSICamera(width=224, height=224, capture_width=1080, capture_height=720, capture_fps=30)
 ```
 
-#### Create USB camera
+### Create USB camera
 
 Call ``USBCamera`` to use a compatbile USB camera.  The same parameters as ``CSICamera`` apply, along with a parameter ``capture_device`` that indicates the device index.  You can check the device index by calling ``ls /dev/video*``.
 
@@ -36,7 +37,7 @@ from jetcam.usb_camera import USBCamera
 camera = USBCamera(capture_device=1)
 ```
 
-#### Read
+### Read
 
 Call ``read()`` to read the latest image as a ``numpy.ndarray`` of data type ``np.uint8`` and shape ``(224, 224, 3)``.  The color format is ``BGR8``.
 
@@ -51,7 +52,7 @@ camera.read()
 image = camera.value
 ```
 
-#### Callback
+### Callback
 
 You can also set the camera to ``running = True``, which will spawn a thread that acquires images from the camera.  These will update the camera's ``value`` attribute automatically.  You can attach a callback to the value using the [traitlets](https://traitlets.readthedocs.io/en/stable/api.html#callbacks-when-trait-attributes-change) library.  This will call the callback with the new camera value as well as the old camera value
 
@@ -65,9 +66,9 @@ def callback(change):
 camera.observe(callback, names='value')
 ```
 
-### Cameras
+## Cameras
 
-#### CSI Cameras
+### CSI Cameras
 
 These cameras work with the [``CSICamera``](jetcam/csi_camera.py) class.  Try them out by following the example [notebook](notebooks/csi_camera/csi_camera.ipynb).
 
@@ -80,7 +81,7 @@ These cameras work with the [``CSICamera``](jetcam/csi_camera.py) class.  Try th
 | LI-IMX219-MIPI-AF-NANO | [Leopard Imaging](https://leopardimaging.com/product/li-imx219-mipi-af-nano/) | 
 | LI-IMX219-MIPI-FF-NANO | [Leopard Imaging](https://leopardimaging.com/product/li-imx219-mipi-ff-nano/) |
 
-#### USB Cameras
+### USB Cameras
 
 These cameras work with the [``USBCamera``](jetcam/usb_camera.py) class.  Try them out by following the example [notebook](notebooks/usb_camera/usb_camera.ipynb).
 
