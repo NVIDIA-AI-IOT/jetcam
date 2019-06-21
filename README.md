@@ -2,20 +2,16 @@
 
 JetCam is an easy to use camera interface for NVIDIA Jetson.
 
+
 ### Setup
 
-1. Setup your Jetson platform by following the [JetCard](https://github.com/NVIDIA-AI-IOT/jetcard) setup.
+```bash
+git clone https://github.com/NVIDIA-AI-IOT-private/jetcam.git
+cd jetcam
+sudo python3 setup.py install
+```
 
-    > You may be able to skip this step if you have the required Python packages already installed.  They include
-    *OpenCV* (with GStreamer support), *traitlets*, and *numpy*. 
-    
-2. Install the JetCam python package
-
-    ```bash
-    git clone https://github.com/NVIDIA-AI-IOT-private/jetcam.git
-    cd jetcam
-    sudo python3 setup.py install
-    ```
+> JetCam is tested with a system configured following the [JetCard](http://github.com/NVIDIA-AI-IOT/jetcard) setup.  Different system configurations may require additional steps.
 
 ### Usage
 
