@@ -7,7 +7,7 @@ JetCam is an easy to use Python camera interface for NVIDIA Jetson.
 
 *  Set the camera to ``running = True`` to attach callbacks to new frames
 
-JetCam makes it easy to prototype AI projects in Python, especially within the Jupyter Lab programming environment installed by [JetCard](http://github.com/NVIDIA-AI-IOT/jetcard).
+JetCam makes it easy to prototype AI projects in Python, especially within the Jupyter Lab programming environment installed in [JetCard](http://github.com/NVIDIA-AI-IOT/jetcard).
 
 ## Setup
 
