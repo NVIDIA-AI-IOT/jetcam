@@ -14,7 +14,7 @@ If you find an issue, please [let us know](../..//issues)!
 ## Setup
 
 ```bash
-git clone https://github.com/NVIDIA-AI-IOT/jetcam.git
+git clone https://github.com/NVIDIA-AI-IOT/jetcam
 cd jetcam
 sudo python3 setup.py install
 ```
