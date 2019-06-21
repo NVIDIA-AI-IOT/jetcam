@@ -86,7 +86,6 @@ These cameras work with the [``CSICamera``](jetcam/csi_camera.py) class.  Try th
 | Raspberry Pi Camera V2 (NOIR) | [Amazon](https://www.amazon.com/RPi-Camera-V2-Official-Raspberry/dp/B07P7GBJTK/ref=sr_1_1_sspa?keywords=raspberry+pi+v2+camera&qid=1554831658&s=electronics&sr=1-1-spons&psc=1) | 
 | Arducam IMX219 CS lens mount | [RobotShop](https://www.robotshop.com/en/arducam-8mp-sony-imx219-camera-module-cs-lens-2718-raspberry-pi.html?gclid=EAIaIQobChMIzMKg38bD4QIVrR6tBh3UoAdjEAYYCSABEgLg-_D_BwE) | 
 | Arducam IMX219 M12 lens mount | [RobotShop](https://www.robotshop.com/en/arducam-8mp-sony-imx219-camera-module-m12-lens-ls40136-raspberry-pi.html) |
-| LI-IMX219-MIPI-AF-NANO | [Leopard Imaging](https://leopardimaging.com/product/li-imx219-mipi-af-nano/) | 
 | LI-IMX219-MIPI-FF-NANO | [Leopard Imaging](https://leopardimaging.com/product/li-imx219-mipi-ff-nano/) |
 
 ### USB Cameras
