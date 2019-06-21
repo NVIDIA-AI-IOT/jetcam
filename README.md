@@ -1,7 +1,13 @@
 # JetCam
 
-JetCam is an easy to use camera interface for NVIDIA Jetson.
+JetCam is an easy to use Python camera interface for NVIDIA Jetson.
 
+*  Works with various USB and CSI cameras using Jetson's [Accelerated GStreamer Plugins](https://developer.download.nvidia.com/embedded/L4T/r32_Release_v1.0/Docs/Accelerated_GStreamer_User_Guide.pdf?uIzwdFeQNE8N-vV776ZCUUEbiJxYagieFEqUoYFM9XSf9tbslxWqFKnVHu8erbZZS20A7ADAIgmSQJvXZTb0LkuGl9GoD5HJz4263HcmYWZW0t2OeFSJKZOfuWZ-lF51Pva2DSDtu2QPs-junm7BhMB_9AMQRwExuDb5zIhf_o8PIbA4KKo)
+*  Easily read images as ``numpy`` arrays with ``image = camera.read()``
+
+*  Set the camera to ``running = True`` to attach callbacks to new frames
+
+JetCam makes it easy to prototype AI projects in Python, especially within the Jupyter Lab programming environment installed by [JetCard](http://github.com/NVIDIA-AI-IOT/jetcard).
 
 ## Setup
 
