@@ -94,3 +94,10 @@ These cameras work with the [``USBCamera``](jetcam/usb_camera.py) class.  Try th
 | Model | URL |
 |:-------|-------|
 | Logitech C270 | [Amazon](https://www.amazon.com/Logitech-Widescreen-designed-Calling-Recording/dp/B004FHO5Y6) | 
+
+## See also
+
+- [JetBot](http://github.com/NVIDIA-AI-IOT/jetbot) - An educational AI robot based on NVIDIA Jetson Nano
+
+- [JetCard](http://github.com/NVIDIA-AI-IOT/jetcard) - An SD card image for web programming AI projects with NVIDIA Jetson Nano
+- [torch2trt](http://github.com/NVIDIA-AI-IOT/torch2trt) - An easy to use PyTorch to TensorRT converter
