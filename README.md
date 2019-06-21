@@ -5,8 +5,6 @@ JetCam is an easy to use camera interface for NVIDIA Jetson.
 
 ### Setup
 
-Call the following from a terminal to install the ``jetcam`` Python package
-
 ```bash
 git clone https://github.com/NVIDIA-AI-IOT-private/jetcam.git
 cd jetcam
