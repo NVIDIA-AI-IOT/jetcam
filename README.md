@@ -17,7 +17,7 @@ cd jetcam
 sudo python3 setup.py install
 ```
 
-> JetCam is tested with a system configured by following the [JetCard](http://github.com/NVIDIA-AI-IOT/jetcard) setup.  Different system configurations may require additional steps.
+> JetCam is tested against a system configured with the [JetCard](http://github.com/NVIDIA-AI-IOT/jetcard) setup.  Different system configurations may require additional steps.
 
 ## Usage
 
