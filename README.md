@@ -80,21 +80,27 @@ camera.observe(callback, names='value')
 
 These cameras work with the [``CSICamera``](jetcam/csi_camera.py) class.  Try them out by following the example [notebook](notebooks/csi_camera/csi_camera.ipynb).
 
-| Model | URL |
-|:-------|-------|
-| Raspberry Pi Camera V2 | [Amazon](https://www.amazon.com/Raspberry-Pi-Camera-Module-Megapixel/dp/B01ER2SKFS/ref=sr_1_3?keywords=raspberry+pi+v2+camera&qid=1554831689&s=electronics&sr=1-3) | 
-| Raspberry Pi Camera V2 (NOIR) | [Amazon](https://www.amazon.com/RPi-Camera-V2-Official-Raspberry/dp/B07P7GBJTK/ref=sr_1_1_sspa?keywords=raspberry+pi+v2+camera&qid=1554831658&s=electronics&sr=1-1-spons&psc=1) | 
-| Arducam IMX219 CS lens mount | [RobotShop](https://www.robotshop.com/en/arducam-8mp-sony-imx219-camera-module-cs-lens-2718-raspberry-pi.html?gclid=EAIaIQobChMIzMKg38bD4QIVrR6tBh3UoAdjEAYYCSABEgLg-_D_BwE) | 
-| Arducam IMX219 M12 lens mount | [RobotShop](https://www.robotshop.com/en/arducam-8mp-sony-imx219-camera-module-m12-lens-ls40136-raspberry-pi.html) |
-| LI-IMX219-MIPI-FF-NANO | [Leopard Imaging](https://leopardimaging.com/product/li-imx219-mipi-ff-nano/) |
+| Model | Infared | FOV | Resolution | Cost | 
+|:-------|:-----:|:---:|:---:|:----:|
+| [Raspberry Pi Camera V2](https://www.amazon.com/Raspberry-Pi-Camera-Module-Megapixel/dp/B01ER2SKFS/ref=sr_1_3?keywords=raspberry+pi+v2+camera&qid=1554831689&s=electronics&sr=1-3) |  | 62.2 | 3280x2464 | $25 | 
+| [Raspberry Pi Camera V2 (NOIR)](https://www.amazon.com/RPi-Camera-V2-Official-Raspberry/dp/B07P7GBJTK/ref=sr_1_1_sspa?keywords=raspberry+pi+v2+camera&qid=1554831658&s=electronics&sr=1-1-spons&psc=1) | x | 62.2 |  3280x2464 | $31 | 
+| [Arducam IMX219 CS lens mount](https://www.robotshop.com/en/arducam-8mp-sony-imx219-camera-module-cs-lens-2718-raspberry-pi.html?gclid=EAIaIQobChMIzMKg38bD4QIVrR6tBh3UoAdjEAYYCSABEgLg-_D_BwE) |   |  |  3280x2464 | $65 | 
+| [Arducam IMX219 M12 lens mount](https://www.robotshop.com/en/arducam-8mp-sony-imx219-camera-module-m12-lens-ls40136-raspberry-pi.html) |   |  |  3280x2464 | $60 |
+| [LI-IMX219-MIPI-FF-NANO](https://leopardimaging.com/product/li-imx219-mipi-ff-nano/) |   |   |  3280x2464 | $29 |
+| [WaveShare IMX219-77](https://www.waveshare.com/IMX219-77-Camera.htm) |   | 77 |  3280x2464 | $19 |
+| [WaveShare IMX219-77IR](https://www.waveshare.com/IMX219-77IR-Camera.htm) | x | 77 |  3280x2464 | $21 |
+| [WaveShare IMX219-120](https://www.waveshare.com/IMX219-120-Camera.htm) |   | 120 |  3280x2464 | $20 |
+| [WaveShare IMX219-160](https://www.waveshare.com/IMX219-160-Camera.htm) |   | 160 |  3280x2464 | $23 |
+| [WaveShare IMX219-160IR](https://www.waveshare.com/IMX219-160IR-Camera.htm) | x | 160 |  3280x2464 | $25 |
+| [WaveShare IMX219-200](https://www.waveshare.com/IMX219-200-Camera.htm) |   | 200 |  3280x2464 | $27 |
 
 ### USB Cameras
 
 These cameras work with the [``USBCamera``](jetcam/usb_camera.py) class.  Try them out by following the example [notebook](notebooks/usb_camera/usb_camera.ipynb).
 
-| Model | URL |
-|:-------|-------|
-| Logitech C270 | [Amazon](https://www.amazon.com/Logitech-Widescreen-designed-Calling-Recording/dp/B004FHO5Y6) | 
+| Model | Infared | FOV | Resolution | Cost | 
+|:-------|:-----:|:---:|:---:|:----:|
+| [Logitech C270](https://www.amazon.com/Logitech-Widescreen-designed-Calling-Recording/dp/B004FHO5Y6) |  | 60 | 1280x720 | $18 | 
 
 ## See also
 
